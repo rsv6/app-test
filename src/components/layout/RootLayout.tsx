@@ -1,13 +1,13 @@
-import { Link, Outlet } from "react-router";
+import { Outlet } from "react-router";
 
 const RootLayout = () => {
     return (
       <div>
         <header>
-          <nav>
+          {/*<nav>
             <Link to="/">Home</Link>
-            <Link to="/dashboard">Dashboard</Link>
-          </nav>
+            <Link to="/about">Dashboard</Link>
+          </nav>*/}
         </header>
         
         {/* Outlet renders child routes */}
