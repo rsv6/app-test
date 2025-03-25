@@ -14,7 +14,7 @@ const RootLayout = () => {
         <Outlet />
         
         <footer>
-          © @rsv6 | 2025 
+          © rsv6 | 2025 
         </footer>
       </div>
     )
