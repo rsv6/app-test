@@ -14,7 +14,7 @@ const RootLayout = () => {
         <Outlet />
         
         <footer>
-          © rsv6 | 2025 
+          <a href="https://github.com/rsv6" target="_blank" rel="noopener noreferrer">@rsv6</a> | 2025.
         </footer>
       </div>
     )
