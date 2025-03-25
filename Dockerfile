@@ -2,9 +2,9 @@
 FROM node:20 AS builder
 WORKDIR /app
 COPY package.json yarn.lock ./
-RUN yarn install
+RUN npm install
 COPY . .
-RUN yarn build
+RUN npm run build
 
 # Etapa de produção
 FROM nginx:alpine
