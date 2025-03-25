@@ -1,14 +1,9 @@
 import './App.css'
+import { AppRouter } from './AppRouter'
 
 function App() {
 
-  return (
-    <>
-      <div>
-        <h3>App Test ReactJS in Docker in Test Docker</h3>
-      </div>
-    </>
-  )
+  return <AppRouter />
 }
 
 export default App
