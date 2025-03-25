@@ -1,0 +1,28 @@
+services: 
+  app_test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: app_test
+    networks:
+      - web
+    ports:
+      - "3001:80"
+    labels:
+      #- "traefik.enable=true"
+      #- "traefik.http.routers.apptest.rule=Host(`apptest.srvieira.com.br`)"
+      #- "traefik.http.routers.apptest.entrypoints=websecure"
+      #- "traefik.http.routers.apptest.tls.certresolver=myresolver"
+
+      - "traefik.enable=true"
+      - "traefik.http.routers.apptest.rule=Host(`apptest.srvieira.com.br`)"
+      - "traefik.http.routers.apptest.entrypoints=websecure"
+      - "traefik.http.routers.apptest.tls=true"
+      - "traefik.http.routers.apptest.tls.certresolver=lets-encrypt"
+      - "traefik.http.services.apptest.loadbalancer.server.port=3001"
+      - "traefik.docker.network=web"
+    
+
+networks:
+  web:
+    external: true
