@@ -14,7 +14,7 @@ const RootLayout = () => {
         <Outlet />
         
         <footer>
-          © 2024 My Application
+          © @rsv6 | 2025 
         </footer>
       </div>
     )
