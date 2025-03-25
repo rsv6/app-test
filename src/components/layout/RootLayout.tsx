@@ -13,7 +13,7 @@ const RootLayout = () => {
         {/* Outlet renders child routes */}
         <Outlet />
         
-        <footer>
+        <footer className="mt-10">
           <a href="https://github.com/rsv6" target="_blank" rel="noopener noreferrer">@rsv6</a> | 2025.
         </footer>
       </div>
